@@ -1,5 +1,6 @@
 var tty = require('tty');
 var encode = require('./lib/encode');
+var util = require('util');
 var Stream = require('stream').Stream;
 
 var exports = module.exports = function () {
@@ -64,7 +65,7 @@ var Charm = exports.Charm = function Charm () {
     this.pending = [];
 }
 
-Charm.prototype = new Stream;
+util.inherits(Charm, Stream);
 
 Charm.prototype.write = function (buf) {
     var self = this;
