@@ -1,5 +1,7 @@
-charm
-=====
+charm_inheritance-fix
+=====================
+
+Published fix for [#24](https://github.com/substack/node-charm/pull/24) because I needed it...
 
 Use
 [ansi terminal characters](http://www.termsys.demon.co.uk/vtansi.htm)
@@ -14,7 +16,7 @@ lucky
 -----
 
 ````javascript
-var charm = require('charm')();
+var charm = require('charm_inheritance-fix')();
 charm.pipe(process.stdout);
 charm.reset();
 
@@ -67,7 +69,7 @@ charm.on('^C', function () {
 methods
 =======
 
-var charm = require('charm')(param or stream, ...)
+var charm = require('charm_inheritance-fix')(param or stream, ...)
 --------------------------------------------------
 
 Create a new readable/writable `charm` stream.

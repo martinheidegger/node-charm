@@ -1,7 +1,7 @@
 {
-    "name" : "charm",
-    "version" : "1.0.0",
-    "description" : "ansi control sequences for terminal cursor hopping and colors",
+    "name" : "charm_inheritance-fix",
+    "version" : "1.0.1",
+    "description" : "ansi control sequences for terminal cursor hopping and colors (fixed for io.js and newer node)",
     "main" : "index.js",
     "directories" : {
         "lib" : ".",
@@ -10,7 +10,7 @@
     },
     "repository" : {
         "type" : "git",
-        "url" : "http://github.com/substack/node-charm.git"
+        "url" : "http://github.com/martinheidegger/node-charm.git"
     },
     "keywords" : [
         "terminal",
